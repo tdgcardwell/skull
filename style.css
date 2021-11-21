@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+/* Animations ================================== */
+
+@keyframes bounce {
+
+  30% {
+    transform: translate3d(0, -10px,0);
+  }
+
+  60% {
+    transform: translate3d(0, 10px,0);
+  }
+
+}
+
+@keyframes twist {
+
+  50% {
+    transform: translate3d(15px,0,0) rotate(12deg);
+  }
+
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(.25);
+    opacity:0;
+  }
+
+  60% {
+    transform: scale(1.2);
+    opacity:1;
+  }
+
+  80 {
+    transform: scale(.8);
+  }
+
+
+
+}
+
+@keyframes wait {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  50% {
+    display: ;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+
+}
+
+/* ============================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0f11;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture-box {
+  margin:auto;
+  height: 75vh;
+  /* padding:30px 100px 15px 0; */
+  padding:2vh 7vw 1vh 0;
+}
+
+.skull {
+  animation: grow 1s ease-out backwards;
+}
+
+.eyebrow {
+  animation: bounce 1s 1.5s ease-out forwards;
+}
+
+.other-eyebrow {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: twist 1s 2s ease-out forwards;
+}
+
+h1 {
+  color: #fff;
+  margin: auto;
+  font-family: "Pirata One";
+  font-size: 8vw;
+  animation: grow 1s 2.5s ease-out backwards;
+            /* twist .5s 3s ease-out forwards; */
+  flex-grow: 1;
+
+}
+
+.stuff {
+  min-height: 100vh;
+  margin: 1rem auto;
+  width:100%;
+  max-width: 1200px;
+  background-color: #fff;
+  animation: wait 1.5s 3.5s ease-out backwards;
+  padding: 2rem;
+}
