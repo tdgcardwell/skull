@@ -17,7 +17,7 @@
 @keyframes twist {
 
   50% {
-    transform: translate3d(15px,0,0) rotate(12deg);
+    transform: translate3d(-10px,0,0) rotate(-10deg);
   }
 
 }
@@ -78,21 +78,21 @@ body {
   margin:auto;
   height: 75vh;
   /* padding:30px 100px 15px 0; */
-  padding:2vh 7vw 1vh 0;
+  padding:7vh 7vw 1vh 0;
 }
 
 .skull {
   animation: grow 1s ease-out backwards;
 }
 
-.eyebrow {
-  animation: bounce 1s 1.5s ease-out forwards;
+#browL {
+  animation: bounce 1.5s 1.5s ease-out forwards;
 }
 
-.other-eyebrow {
+#browR {
   transform-box: fill-box;
   transform-origin: 50% 50%;
-  animation: twist 1s 2s ease-out forwards;
+  animation: twist 1s 1.5s ease-out forwards;
 }
 
 h1 {
@@ -114,4 +114,90 @@ h1 {
   background-color: #fff;
   animation: wait 1.5s 3.5s ease-out backwards;
   padding: 2rem;
+  color: #0e0f11;
+}
+
+
+/* Skull Icon ================================== */
+
+.icon-box {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
+}
+
+.skull-icon {
+  fill: #0e0f11;
+}
+
+
+/* updated ================= */
+
+#bg {
+  fill: #fff;
+}
+
+/* separated so can be changed individually */
+#skull {
+  fill: #fff;
+}
+
+#crown,
+#brim {
+  fill: rgb(207,145,44);
+}
+
+#band {
+  fill:rgb(232,41,128);
+}
+
+#browL, #browR, #eyeL, #eyeR, #nose, #outline {
+  fill:rgb(50,52,59);
+}
+
+/* Separated so can be colored individually */
+#feather .upper,
+#feather .lower {
+  fill:rgb(50,52,59);
+}
+
+#beard, #stache {
+  fill:rgb(50,52,59);
+  transition: .5s
+}
+
+@keyframes wiggle {
+  30% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+
+@keyframes sparkle {
+  50% {
+    fill:#fff;
+  }
+}
+
+#stache:hover {
+  animation: wiggle 1s ease-in-out forwards;
+  /* animation-iteration-count: infinite; */
+}
+
+#stache:hover .highlight {
+  animation: sparkle 1s ease-in forwards;
+  /* animation-iteration-count: infinite; */
+}
+
+
+.highlight {
+  fill:rgb(0,113,188);
+}
+
+.shade {
+  fill:rgb(66,33,11);
 }
