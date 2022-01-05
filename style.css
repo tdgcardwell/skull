@@ -68,6 +68,7 @@
 body {
   background-color: #0e0f11;
   background-color: #1d1d2f;
+  background-color: #211d2f;
 }
 
 .container {
@@ -135,6 +136,7 @@ h1 {
 
 /* updated ================= */
 /* second color attribs are borrowed from Iron Velvet */
+/* third colors are my adjustments - and adding pink back */
 
 #bg {
   fill: #fff;
@@ -151,21 +153,24 @@ h1 {
 #brim {
   fill: rgb(207,145,44);
   fill: #ff501a;
+  fill: #ff5f1a;
 }
 
 #band {
   fill:rgb(232,41,128);
-  fill: #f1eeeb;
+  /* fill: #f1eeeb; */
 }
 
 #browL, #browR, #nose, #outline {
   fill:rgb(50,52,59);
   fill: #1d1d2f;
+  fill: #211d2f;
 }
 
 #eyeL, #eyeR {
   fill:rgb(50,52,59);
   fill: #ff501a;
+  fill: #ff5f1a;
 }
 
 /* Separated so can be colored individually */
@@ -178,6 +183,7 @@ h1 {
 #beard, #stache {
   fill:rgb(50,52,59);
   fill: #1d1d2f;
+  fill: #211d2f;
   transition: .5s
 }
 
@@ -211,9 +217,11 @@ h1 {
 .highlight {
   fill:rgb(0,113,188);
   fill: #ff501a;
+  fill: #ff5f1a;
 }
 
 .shade {
   fill:rgb(66,33,11);
   fill: #1d1d2f;
+  fill: #211d2f;
 }
